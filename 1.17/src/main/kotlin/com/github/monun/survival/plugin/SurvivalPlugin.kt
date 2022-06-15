@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package com.github.monun.survival.plugin
 
 import com.github.monun.kommand.kommand

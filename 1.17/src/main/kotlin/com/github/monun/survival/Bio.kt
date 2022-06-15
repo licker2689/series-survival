@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION", "UnstableApiUsage")
-
 package com.github.monun.survival
 
 import com.destroystokyo.paper.event.player.PlayerJumpEvent

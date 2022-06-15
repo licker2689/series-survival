@@ -119,6 +119,6 @@ object SurvivalConfig {
 
         defaultHumans = defaultHumanList.map { it.trim() }.toSortedSet(String.CASE_INSENSITIVE_ORDER)
         defaultSuperZombies = defaultSuperZombieList.map { it.trim() }.toSortedSet(String.CASE_INSENSITIVE_ORDER)
-        zombieUncraftables = EnumSet.copyOf(zombieUncraftableList.map { Material.valueOf(it.uppercase(Locale.getDefault())) })
+        zombieUncraftables = EnumSet.copyOf(zombieUncraftableList.map { Material.valueOf(it.toUpperCase()) })
     }
 }

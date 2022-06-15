@@ -1,9 +1,9 @@
 import java.io.OutputStream
 
 plugins {
-    kotlin("jvm") version "1.5.20"
-    kotlin("plugin.serialization") version "1.4.31"
-    id("com.github.johnrengelman.shadow") version "5.2.0"
+    kotlin("jvm")
+    kotlin("plugin.serialization")
+    id("com.github.johnrengelman.shadow")
     `maven-publish`
 }
 
@@ -40,8 +40,8 @@ repositories {
 dependencies {
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib:1.5.10")
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1-native-mt")
-    compileOnly("io.papermc.paper:paper-api:1.19-R0.1-SNAPSHOT")
-    compileOnly("org.spigotmc:spigot-api:1.19-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT")
 
     implementation("com.github.monun:tap:3.4.0")
     implementation("com.github.monun:kommand:0.8.0")
