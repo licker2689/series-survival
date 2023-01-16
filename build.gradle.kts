@@ -40,8 +40,8 @@ repositories {
 dependencies {
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib:1.5.10")
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1-native-mt")
-    compileOnly("io.papermc.paper:paper-api:1.19-R0.1-SNAPSHOT")
-    compileOnly("org.spigotmc:spigot-api:1.19-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
 
     implementation("com.github.monun:tap:3.4.0")
     implementation("com.github.monun:kommand:0.8.0")
@@ -143,3 +143,7 @@ tasks {
 //        }
 //    }
 //}
+tasks.jar {
+    destinationDirectory.set(file("$rootDir/jars"))
+    archiveName = rootProject.name + '-' + "1.19" + '-' + version + ".jar"
+}
